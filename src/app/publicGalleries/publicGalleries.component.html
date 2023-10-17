@@ -1,0 +1,29 @@
+<div class="galleryPage">
+
+  <div class="row galleries">
+    <!-- Titres des la page -->
+    <div class="col-1">
+      <h1>&nbsp;Galeries publiques <mat-icon>photo_library</mat-icon></h1>
+    </div>
+  </div>
+
+  <div class="row galleries">
+
+    <div class="col-1 galleryList">
+      <div *ngFor="let gal of listPGallerie">
+      <!-- Photos de couverture de galeries -->
+      <div class="galleryThumbnail">
+        <div>{{gal.name}}</div>
+        <img src="/assets/images/galleryThumbnail.png" alt="Galerie #1">
+       </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <!-- Photo de la galerie sélectionnée (Partie 2 !) -->
+      <h2>Photos de la galerie sélectionnée <mat-icon>photo_camera</mat-icon></h2>
+    </div>
+
+  </div>
+
+</div>
